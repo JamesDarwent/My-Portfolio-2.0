@@ -1,0 +1,25 @@
+body{
+    background-color: #4B878BFF;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.profile_pic {
+border-radius: 50%;
+}
+
+.flex-div1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+p {
+    font-size: 50px;
+}
