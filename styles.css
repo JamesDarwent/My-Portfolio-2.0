@@ -18,12 +18,12 @@ header{
     position: fixed;
     z-index: 999;
     width: 100%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
-.logo {
+ .logo { 
     opacity: 0;
-}
+ }  
 
 .navigation-toggle {
     display:none;
@@ -37,7 +37,7 @@ header{
     height: 100%;
     display: flex;
     align-items: center;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 .navigation-toggle-label span,
@@ -66,7 +66,6 @@ header{
 }
 
 nav {
-    background: var(--background);
     width: 100%;
     position: absolute;
     text-align: right;
@@ -119,7 +118,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-    border: 5px solid red; 
+    /* border: 5px solid red;  */
 } 
 
 h2 { 
@@ -128,14 +127,64 @@ h2 {
     padding: 10px;
 }
 
-.pink-title-text {
+.pink-h2-text {
     color: #FF0099;
 }
 
+/* ----- media query ----- */
 
-/* @media only screen and (max-width: 415px) {
-    body {
-      background-color: lightblue;
-      background-image: none;
-    }
-  } */
+
+@media screen and (min-width: 760px) {
+    .navigation-toggle-label {
+        display: none;
+        } 
+
+        nav {
+            all: unset;
+            width: 100%;
+            position: absolute;
+            margin-top: 0;
+            top: 0;
+            right: 0;
+            justify-content: flex-end;
+            }
+        
+        nav ul {
+            margin: 0;
+            padding: 25px;
+            list-style-type: none;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            font-size: 30px;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            opacity: 1;
+        }
+        
+        nav ul li a:hover {
+            color: #FF0099;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0%;
+            background-color: #FF0099;
+            position: absolute;
+            bottom: -15px;
+            transition: all ease-in-out 350ms;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%
+        }
+}    

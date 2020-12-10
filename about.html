@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 </head>
 <body>
-    <nav>
-        <ul class="navbar_container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
+    <!------------ Nav Bar start ------------->
+    <header>
+        <h1 class="logo">Logo</h1>
+        <input type="checkbox" id="navigation-toggle" class="navigation-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="navigation-toggle" class="navigation-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <!------------ Nav Bar end ------------->
+
+    <section>
+        <h1>About me</h1>
+            <article class="about-me">
+                <p>I'm James, an aspiring web developer living in the heart of Manchester. 
+                <br><br/> I'm learning a diverse set of skills ranging from HTML, CSS, up to JavaScript to help me develop beautiful and emotive web design. 
+                <br><br/> I'm a patient, approachable communicator who is looking to break into the tech world.
+                <br><br/> I hope one day we can collaborate together...
+                </p>
+            </article>
+    </section>
+
+
     
 </body>
 </html>

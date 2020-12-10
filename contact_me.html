@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 </head>
 <body>
-    <nav>
-        <ul class="navbar_container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact_me.html">Contact Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+    <!------------ Nav Bar start ------------->
+    <header>
+        <h1 class="logo">Logo</h1>
+        <input type="checkbox" id="navigation-toggle" class="navigation-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact_me.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="navigation-toggle" class="navigation-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <!------------ Nav Bar end ------------->
     </nav>
+
+    <div>
+        <form action="jamesdarwent_88@hotmail.co.uk" method="post">
+            <ul class="">
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user-name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="user-email">
+                </li>
+                <li>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="user-message"></textarea>
+                </li>
+                <li class="submit-button">
+                    <button type="submit">Send</button>
+                </li>
+            </ul>
+        </form>
+    </div>
     
 </body>
 </html>
