@@ -1,25 +1,141 @@
 body{
-    background-color: #4B878BFF;
+    height: 100vh;
+    background-image: url("WaveBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Raleway', sans-serif;
-
-
+    font-weight: 400;
 }
 
-.profile_pic {
-border-radius: 50%;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-.flex-div1 {
+/*  ----------------- Nav Bar styling start ----------------- */
+
+header{
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    border: solid red 1px;
+}
+
+.logo {
+    opacity: 0;
+}
+
+.navigation-toggle {
+    display:none;
+}
+
+.navigation-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: solid red 1px;
+}
+
+.navigation-toggle-label span,
+.navigation-toggle-label span::before,
+.navigation-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 4px;
+    position: relative;
+}
+
+.navigation-toggle-label span::before,
+.navigation-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.navigation-toggle-label span::before {
+    bottom: 7px;
+}
+
+.navigation-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    background: var(--background);
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FF0099;
+}
+
+.navigation-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.navigation-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*  ------------ Nav Bar styling end ------------ */
+
+
+
+.section-container{
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: end;
+    align-items: center;
+    border: 5px solid red; 
+} 
+
+h2 { 
+    color: white;
+    font-size: 80px;
+    padding: 10px;
 }
 
-h1 {
-    font-size: 50px;
-
+.pink-title-text {
+    color: #FF0099;
 }
 
-p {
-    font-size: 50px;
-}
+
+/* @media only screen and (max-width: 415px) {
+    body {
+      background-color: lightblue;
+      background-image: none;
+    }
+  } */

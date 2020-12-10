@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    background-image: url("WaveBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-me {
+    color: white;
+
+
+}
+
+header {
+    
+}
+
+.navbar-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 25px;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FF0099;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #FF0099;
+    position: absolute;
+    bottom: -15px;
+    transition: all ease-in-out 350ms;
+}
+
+nav ul li a:hover::after {
+    width: 100%
+}
